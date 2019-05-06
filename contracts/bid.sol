@@ -19,23 +19,23 @@ contract Project {
         title = _title;
         min_bid = _min_bid;
     }
-    
     function bid(uint amount) public {
-        require (amount > min_bid);
-        require(!ended);
-        require(bidders[msg.sender] == 0);
-        require(bestBid < amount);
-        
-        bestBid = amount;
+        require (amount > min_bid, " amount must be greater than minimum bid value ");
+        require(!ended," Sorry bid has been closed ");
+        require(bidders[msg.sender] == 0, " you have already bidded some amount in project  ");
+ 
+        if(bestBid < amount){
+            bestBid = amount;
+        }
+
         bestBidder = msg.sender;
-                
         bidders[msg.sender] += amount;
     }
     
     function selectBidder(address bidder) public{
-        require(!ended);
-        require(bidders[bidder] != 0);
-        require(msg.sender == employer);
+        require(!ended," Sorry bid has been closed ");
+        require(bidders[bidder] != 0, "no address found");
+        require(msg.sender == employer," only employer can execute this function ");
         
         selectedBidder = bidder;
         endBid();
@@ -43,20 +43,17 @@ contract Project {
     
     
     function withDraw() public{
-        require(ended);
-        require(msg.sender == employer);
+        require(ended," Sorry bid has been closed ");
+        require(msg.sender == employer," only employer can execute this function ");
         msg.sender.transfer(20 ether);
        
     }
     
     function endBid() public {
-        require(!ended);
-        require(msg.sender == employer);
+        require(!ended," Sorry bid has been closed ");
+        require(msg.sender == employer," only employer can execute this function ");
         ended = true;
     }
-    
-    
-    
-    
+ 
 }
 
