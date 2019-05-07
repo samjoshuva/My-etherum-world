@@ -22,24 +22,47 @@ contract ERCToken {
         decimals = 10;
         _totalSupply = 30;
         owner = msg.sender;
-        balances[owner] = (5*_totalSupply)/100;
+        
         startTime = block.timestamp;
         currentTime = now;
         cliff = 10; 
     }
 
-    function balanceOf(address tokenOwner) public   returns (uint balance) {
-        
-        uint inc =0;
-        uint diff = (now - startTime); // difference of present time and time last function called
-        if(diff >=  cliff){ // if the difference is greater than cliff value
-        
-            inc = (diff / cliff) * (5*_totalSupply)/100;
-            
-            balances[tokenOwner] = inc;
-        }
-
+    function balanceOf(address tokenOwner) public view  returns (uint balance) {
         return balances[tokenOwner];
+    }
+    
+    function allowance(address tokenOwner) public returns (uint allow){
+        return allowed[tokenOwner] = calculateAllowance();
+    }
+    
+    function calculateAllowance() public view returns(uint balance){
+        uint inc = 0;
+        uint percent = (5*_totalSupply)/100;
+        uint rem;
+        uint diff = (now - startTime); // difference of present time and time last function called
+        if(diff > cliff){ // if the difference is greater than cliff value
+            rem = (diff / cliff);
+            inc =  rem * percent;
+            if(inc == 0){
+                return percent;
+            }
+            else if(inc == 1){
+                return percent * 2;
+            }
+            else if(inc >= _totalSupply){
+                return  _totalSupply;
+            }
+            else {
+                return inc;
+            }
+            
+            
+            
+        }
+        
+        
+        
     }
     
     // function allowance( address spender) public view returns (uint remaining) {
@@ -51,7 +74,7 @@ contract ERCToken {
         balances[msg.sender] = balances[msg.sender] - tokens;
         balances[to] = balances[to] + tokens;
         // allowed[msg.sender] = allowed[msg.sender] - tokens;
-        currentTime = now;
+        // currentTime = now;
 
         return true;
     }
@@ -61,7 +84,7 @@ contract ERCToken {
         balances[from] = balances[from] - tokens;
         balances[to] = balances[to] + tokens;
         // allowed[msg.sender] = allowed[msg.sender] - tokens;
-        currentTime = now;
+        // currentTime = now;
 
         return true;
     }
@@ -72,13 +95,9 @@ contract ERCToken {
      
     modifier vesting(uint tokens){
         require(tokens <= balances[msg.sender],"You don't have enough token");  // check if o. of token to to send is avaliable in balance
-        uint inc = 0;
-        uint diff = (now - startTime); // difference of present time and time last function called
         
-        if(diff > cliff){ // if the difference is greater than cliff value 
-            inc = (diff / cliff) * (5*_totalSupply)/100;
-            balances[msg.sender] = inc;
-        }
+        
+       
         _;
     }
    
@@ -91,9 +110,10 @@ contract ERCToken {
         if(diff > cliff){ // if the difference is greater than cliff value
             rem = (diff / cliff);
             inc =  rem * percent;
-            return inc;
+            return percent;
             // balances[msg.sender] += inc;
         }
+        
 
    }
     
