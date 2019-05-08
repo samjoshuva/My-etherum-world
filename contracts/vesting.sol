@@ -25,7 +25,7 @@ contract ERCToken {
         
         startTime = block.timestamp;
         currentTime = now;
-        cliff = 10; 
+        cliff = 30; 
     }
 
     function balanceOf(address tokenOwner) public view  returns (uint balance) {
@@ -55,20 +55,11 @@ contract ERCToken {
             }
             else {
                 return inc;
-            }
-            
-            
-            
+            } 
         }
-        
-        
-        
     }
     
-    // function allowance( address spender) public view returns (uint remaining) {
-    //     return allowed[spender];
-    // }
-
+   
     function transfer(address to, uint tokens) public payable vesting(tokens)   returns (bool success) {
         
         balances[msg.sender] = balances[msg.sender] - tokens;
@@ -83,38 +74,23 @@ contract ERCToken {
       
         balances[from] = balances[from] - tokens;
         balances[to] = balances[to] + tokens;
-        // allowed[msg.sender] = allowed[msg.sender] - tokens;
-        // currentTime = now;
+        
 
         return true;
     }
     
-    // function approve(address spender, uint percent) public  {
-       
-    // }
-     
+    
     modifier vesting(uint tokens){
         require(tokens <= balances[msg.sender],"You don't have enough token");  // check if o. of token to to send is avaliable in balance
-        
-        
-       
+    balances[msg.sender] = balances[msg.sender] + allowance(msg.sender);
+    if(balances[msg.sender] >= _totalSupply){
+        balances[msg.sender] = _totalSupply;
+    }
+    allowed[msg.sender]= 0;
         _;
     }
    
    
-   function timeTest() public view returns(uint) {
-       uint inc =0;
-       uint percent = (5*_totalSupply)/100;
-       uint rem;
-        uint diff = (now - startTime); // difference of present time and time last function called
-        if(diff > cliff){ // if the difference is greater than cliff value
-            rem = (diff / cliff);
-            inc =  rem * percent;
-            return percent;
-            // balances[msg.sender] += inc;
-        }
-        
-
-   }
+   
     
 }
