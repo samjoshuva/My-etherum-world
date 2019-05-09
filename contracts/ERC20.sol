@@ -1,65 +1,74 @@
-
 pragma solidity ^0.5.0;
 
-contract ERCToken {
+import "browser/IERC20.sol";
+import "browser/safeMath.sol";
+import "browser/owned.sol";
+import 'browser/approveandCallFallback.sol';
+
+
+contract ERC20 is IERC20, owned {
+    
+    using safeMath for uint;    
+    
     string public symbol;
     string public  name;
     uint8 public decimals;
     uint public _totalSupply;
     
-    address public owner;
 
-    mapping(address => uint) balances;
+    mapping(address => uint) public _balances;
+    mapping(address => mapping(address => uint)) public  _allowed;
     
-    uint public currentTime;
-    
-    
-
-    constructor() public payable {
+    constructor( ) public payable {
         symbol = "SJ";
-        name = "DUMMY Token";
+        name = "SJ Token";
         decimals = 10;
         _totalSupply = 100;
-        owner = msg.sender;
-        balances[owner] = _totalSupply;
+        _balances[owner] = _totalSupply;
+        emit Transfer(address(0), owner, _totalSupply);
     }
-
-    function balanceOf(address tokenOwner) public view  returns (uint balance) {
-        return balances[tokenOwner];
+    
+    function balanceOf(address tokenOwner) public view returns(uint){
+        return _balances[tokenOwner];
     }
+    
+    function totalSupply() public view isowned returns(uint){
+        return _totalSupply;
+    }
+    
+    function transfer(address to, uint tokens) public returns(bool){
+        _balances[msg.sender] = _balances[msg.sender].sub(tokens);
+        _balances[to] = _balances[to].add(tokens);
+        emit Transfer(msg.sender, to, tokens);
+        return true;
 
-
-    function transfer(address to, uint tokens) public payable vesting  returns (bool success) {
-        balances[msg.sender] = balances[msg.sender] - tokens;
-        balances[to] = balances[to] + tokens;
-        // emit Transfer(msg.sender, to, tokens);
-        currentTime = block.timestamp;
+    }
+    function transferFrom(address from, address to, uint tokens) public returns(bool){
+        _balances[from] = _balances[from].sub(tokens);
+        _allowed[from][msg.sender] = _allowed[from][msg.sender].sub(tokens);
+        _balances[to] = _balances[to].add(tokens);
+        emit Transfer(from, to, tokens);
         return true;
     }
     
-    function transferFrom(address from, address to, uint tokens ) public payable vesting returns(bool success){
-        balances[from] = balances[from] - tokens;
-        balances[to] = balances[to] + tokens;
+    function approve(address spender, uint tokens) public returns(bool){
+        _allowed[msg.sender][spender] = tokens;
         return true;
     }
     
-    modifier vesting(){
-        require(block.timestamp >=currentTime + 5,"please wait for 5 sec to Transfer next token");
+    function allowance(address owner, address spender) public view returns(uint){
+        return _allowed[owner][spender];
+    }
+    
+    function approveAndCall(address spender, uint tokens, bytes memory data) public returns (bool success) {
+        _allowed[msg.sender][spender] = tokens;
+        emit Approval(msg.sender, spender, tokens);
+        approveAndCallFallback(spender).receiveApproval(msg.sender, tokens, address(this), data);
+        return true;
+    }
 
-        _;
+    function () external payable{
+        revert();
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
