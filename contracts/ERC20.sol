@@ -2,37 +2,37 @@ pragma solidity ^0.5.0;
 
 import "browser/IERC20.sol";
 import "browser/safeMath.sol";
-import "browser/owned.sol";
+import "browser/Ownable.sol";
 import 'browser/approveandCallFallback.sol';
 
 
-contract ERC20 is IERC20, owned {
+contract ERC20 is IERC20, Ownable {
     
     using safeMath for uint;    
     
     string public symbol;
     string public  name;
     uint8 public decimals;
-    uint public _totalSupply;
+    uint internal _totalSupply;
     
 
-    mapping(address => uint) public _balances;
-    mapping(address => mapping(address => uint)) public  _allowed;
+    mapping(address => uint) internal _balances;
+    mapping(address => mapping(address => uint)) internal  _allowed;
     
     constructor( ) public payable {
         symbol = "SJ";
         name = "SJ Token";
         decimals = 10;
         _totalSupply = 100;
-        _balances[owner] = _totalSupply;
-        emit Transfer(address(0), owner, _totalSupply);
+        // _balances[_owner] = _totalSupply;
+        emit Transfer(address(0), _owner, _totalSupply);
     }
     
     function balanceOf(address tokenOwner) public view returns(uint){
         return _balances[tokenOwner];
     }
     
-    function totalSupply() public view isowned returns(uint){
+    function totalSupply() public view onlyOwner returns(uint){
         return _totalSupply;
     }
     
@@ -66,9 +66,13 @@ contract ERC20 is IERC20, owned {
         approveAndCallFallback(spender).receiveApproval(msg.sender, tokens, address(this), data);
         return true;
     }
+    
+    uint public c;
 
-    function () external payable{
-        revert();
+    function () external {
+        // revert();
+        c = 10;
+        
     }
     
 }
