@@ -28,8 +28,9 @@ library safeMath {
     }
     
     function sub(uint a, uint b) internal pure returns(uint){
-        require(b <= a, "Subration overflow");
-        uint c = a - b;
+        require(b <= a, "SafeMath: subtraction overflow");
+        uint256 c = a - b;
+
         return c;
     }
     
