@@ -82,21 +82,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"wallet\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"benifiary\",\"type\":\"address\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"rate\",\"type\":\"uint256\"},{\"name\":\"wallet\",\"type\":\"address\"},{\"name\":\"token\",\"type\":\"address\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol\":\"CrowedSale\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol\":{\"keccak256\":\"0x9df32b23cf13b9dc7092637f2aa6d37d386a732cb296714ccfc96c890a7b8afd\",\"urls\":[\"bzzr://488bed5113d6f07b14b3d1f9bf9c0c320b2048a7d7ec71f3e9d263bf327e8563\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/IERC20.sol\":{\"keccak256\":\"0xb3f468929edf7326922e23d152168e7cde3f23b33518b48f9fb228c933d1767f\",\"urls\":[\"bzzr://7b246c96081ad23a221aadb6eb1d7adcdfbb4d961b272550ff85829189d6c61d\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/safeMath.sol\":{\"keccak256\":\"0xb748325b770d16b895bd59582ce69801a4b7c79830107a462cc70bf4e3023f2a\",\"urls\":[\"bzzr://640b837b930e7462ae0f2886b2d5e6cf85cd6a0a3f55fbeaef356022d00f043f\"]}},\"version\":1}",
-  "bytecode": "0x60806040526040516060806108708339810180604052606081101561002357600080fd5b810190808051906020019092919080519060200190929190805190602001909291905050506000831115156100c0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260148152602001807f43726f776473616c653a2072617465206973203000000000000000000000000081525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161415151561018b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260258152602001807f43726f776473616c653a2077616c6c657420697320746865207a65726f20616481526020017f647265737300000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610256576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001807f43726f776473616c653a20746f6b656e20697320746865207a65726f2061646481526020017f726573730000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8260028190555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505050610580806102f06000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632c4e722e1461006d578063521eb27314610098578063ec8ac4d8146100ef578063fc0c546a14610133575b61006b3361018a565b005b34801561007957600080fd5b506100826103c7565b6040518082815260200191505060405180910390f35b3480156100a457600080fd5b506100ad6103d1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101316004803603602081101561010557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061018a565b005b34801561013f57600080fd5b506101486103fb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415151561022f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f62656e6966696172792069732061646472657373207a65726f0000000000000081525060200191505060405180910390fd5b600034141515156102a8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600e8152602001807f207a65726f207765692073656e6400000000000000000000000000000000000081525060200191505060405180910390fd5b600034905060006102b882610424565b90506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb84836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561037e57600080fd5b505af1158015610392573d6000803e3d6000fd5b505050506040513d60208110156103a857600080fd5b8101908080519060200190929190505050506103c2610442565b505050565b6000600254905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600061043b600254836104ad90919063ffffffff16565b9050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156104aa573d6000803e3d6000fd5b50565b6000808314156104c0576000905061054e565b600082840290508284828115156104d357fe5b04141515610549576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260178152602001807f4d756c7469706c69636174696f6e206f766572666c6f7700000000000000000081525060200191505060405180910390fd5b809150505b9291505056fea165627a7a72305820faa19e997d1541e0857957c812b6d4c00829960d9b0e653122705da33c8b1fd70029",
-  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632c4e722e1461006d578063521eb27314610098578063ec8ac4d8146100ef578063fc0c546a14610133575b61006b3361018a565b005b34801561007957600080fd5b506100826103c7565b6040518082815260200191505060405180910390f35b3480156100a457600080fd5b506100ad6103d1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101316004803603602081101561010557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061018a565b005b34801561013f57600080fd5b506101486103fb565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415151561022f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f62656e6966696172792069732061646472657373207a65726f0000000000000081525060200191505060405180910390fd5b600034141515156102a8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600e8152602001807f207a65726f207765692073656e6400000000000000000000000000000000000081525060200191505060405180910390fd5b600034905060006102b882610424565b90506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb84836040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561037e57600080fd5b505af1158015610392573d6000803e3d6000fd5b505050506040513d60208110156103a857600080fd5b8101908080519060200190929190505050506103c2610442565b505050565b6000600254905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600061043b600254836104ad90919063ffffffff16565b9050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156104aa573d6000803e3d6000fd5b50565b6000808314156104c0576000905061054e565b600082840290508284828115156104d357fe5b04141515610549576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260178152602001807f4d756c7469706c69636174696f6e206f766572666c6f7700000000000000000081525060200191505060405180910390fd5b809150505b9291505056fea165627a7a72305820faa19e997d1541e0857957c812b6d4c00829960d9b0e653122705da33c8b1fd70029",
-  "sourceMap": "75:1573:0:-;;;249:392;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;249:392:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:1;352:4;:8;344:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;421:1;403:20;;:6;:20;;;;395:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;509:1;483:28;;491:5;483:28;;;;475:77;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;571:4;563:5;:12;;;;595:6;585:7;;:16;;;;;;;;;;;;;;;;;;620:5;611:6;;:14;;;;;;;;;;;;;;;;;;249:392;;;75:1573;;;;;;",
-  "deployedSourceMap": "75:1573:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;690:21;700:10;690:9;:21::i;:::-;75:1573;913:75;;8:9:-1;5:2;;;30:1;27;20:12;5:2;913:75:0;;;;;;;;;;;;;;;;;;;;;;;815:87;;8:9:-1;5:2;;;30:1;27;20:12;5:2;815:87:0;;;;;;;;;;;;;;;;;;;;;;;;;;;1003:241;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1003:241:0;;;;;;;;;;;;;;;;;;;;;;729:76;;8:9:-1;5:2;;;30:1;27;20:12;5:2;729:76:0;;;;;;;;;;;;;;;;;;;;;;;;;;;1003:241;1317:1;1295:24;;:10;:24;;;;1287:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1380:1;1367:9;:14;;1359:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1078:17;1098:9;1078:29;;1117:14;1134:26;1150:9;1134:15;:26::i;:::-;1117:43;;1170:6;;;;;;;;;;;:15;;;1186:9;1196:6;1170:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1170:33:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1170:33:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1170:33:0;;;;;;;;;;;;;;;;;1213:15;:13;:15::i;:::-;1410:1;;1003:241;:::o;913:75::-;950:7;976:5;;969:12;;913:75;:::o;815:87::-;854:15;888:7;;;;;;;;;;;881:14;;815:87;:::o;729:76::-;767:6;792;;;;;;;;;;;785:13;;729:76;:::o;1428:120::-;1495:7;1521:20;1535:5;;1521:9;:13;;:20;;;;:::i;:::-;1514:27;;1428:120;;;:::o;1563:78::-;1607:7;;;;;;;;;;;:16;;:27;1624:9;1607:27;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1607:27:0;1563:78::o;49:209:9:-;100:4;123:1;118;:6;115:43;;;146:1;139:8;;;;115:43;167:6;178:1;176;:3;167:12;;204:1;199;197;:3;;;;;;;;:8;189:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;250:1;243:8;;;49:209;;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\n\nimport \"./IERC20.sol\";\nimport \"./safeMath.sol\";\n\n\ncontract CrowedSale {\n    using safeMath for uint; \n    \n    IERC20 private _token;\n    \n    address payable private _wallet;\n    \n    uint private _rate;\n    \n    \n    \n    constructor(uint rate, address payable wallet, IERC20 token) public payable {\n        \n        require(rate > 0, \"Crowdsale: rate is 0\");\n        require(wallet != address(0), \"Crowdsale: wallet is the zero address\");\n        require(address(token) != address(0), \"Crowdsale: token is the zero address\");\n\n        _rate = rate;\n        _wallet = wallet;\n        _token = token;\n        \n    }\n    \n    function () external payable {\n        buyTokens(msg.sender);\n    }\n\n    \n    function token() public view returns (IERC20) {\n        return _token;\n    }\n\n   \n    function wallet() public view returns (address payable) {\n        return _wallet;\n    }\n\n    \n    function rate() public view returns (uint256) {\n        return _rate;\n    }\n    \n    \n    function buyTokens(address benifiary) public payable preValidate {\n        uint256 weiAmount = msg.value;\n        uint256 tokens = _getTokenAmount(weiAmount);\n        _token.transfer(benifiary,tokens);\n        _forwardFunds();\n        \n    }\n    \n    modifier preValidate() {\n        require(msg.sender != address(0), \"benifiary is address zero\");\n        require(msg.value != 0, \" zero wei send\");\n        _;\n    }\n    \n    function _getTokenAmount(uint256 weiAmount) internal view returns (uint256) {\n        return weiAmount.mul(_rate);\n    }\n    \n    \n    function _forwardFunds() internal {\n        _wallet.transfer(msg.value);\n    }\n    \n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"wallet\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"benifiary\",\"type\":\"address\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"rate\",\"type\":\"uint256\"},{\"name\":\"wallet\",\"type\":\"address\"},{\"name\":\"token\",\"type\":\"address\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol\":\"CrowedSale\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol\":{\"keccak256\":\"0x45e13b7132909d04611dc5f3792d02cf979922af1296d8f0008f109fb3222f60\",\"urls\":[\"bzzr://23eda3b27d8b681aaa34722dc1ea8aef74ac45f3dfad1340c4b590101e412b55\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/ERC20.sol\":{\"keccak256\":\"0x6280fcd336c3ce9984324eb24b79022c3ddb423055ccc2fdd0b6c8276fb70c7a\",\"urls\":[\"bzzr://78c02b82b56593e18e5bdebafe928abee2629c95afdcba0dfc4dfe89db641cc4\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/IERC20.sol\":{\"keccak256\":\"0xb3f468929edf7326922e23d152168e7cde3f23b33518b48f9fb228c933d1767f\",\"urls\":[\"bzzr://7b246c96081ad23a221aadb6eb1d7adcdfbb4d961b272550ff85829189d6c61d\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/Ownable.sol\":{\"keccak256\":\"0x492dfacb60b2cb7e62cb5317978bd2ab53b60685fe7356d70697b93f67bd2b50\",\"urls\":[\"bzzr://5b72948a01296335aa18e52d1a20a5412ec886909d201ec1fc0b5488a33185b0\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/approveandCallFallback.sol\":{\"keccak256\":\"0x7380c5a05d50f2660877d46bb8a3c501505b84bb5cdf2491a83aacc7e1d3e6fc\",\"urls\":[\"bzzr://192366380de80ee7571ae743764d4e0213fe6e546f00117d0a0524c6fb532a6b\"]},\"/home/sam/Documents/GitHub/My-etherum-world/contracts/safeMath.sol\":{\"keccak256\":\"0xe6e67590ffe6706f1e762dea8677ab2aeed700f010b93089471e3d88dce48717\",\"urls\":[\"bzzr://f6e710fd4f0669204a5006391ddda95f8257e728c4561de8672961d59e2b0250\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040516060806108a48339810180604052606081101561002357600080fd5b810190808051906020019092919080519060200190929190805190602001909291905050506000831115156100c0576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260148152602001807f43726f776473616c653a2072617465206973203000000000000000000000000081525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161415151561018b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260258152602001807f43726f776473616c653a2077616c6c657420697320746865207a65726f20616481526020017f647265737300000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610256576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260248152602001807f43726f776473616c653a20746f6b656e20697320746865207a65726f2061646481526020017f726573730000000000000000000000000000000000000000000000000000000081525060400191505060405180910390fd5b8260028190555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050506105b4806102f06000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632c4e722e1461006d578063521eb27314610098578063ec8ac4d8146100ef578063fc0c546a14610133575b61006b3361018a565b005b34801561007957600080fd5b506100826103fb565b6040518082815260200191505060405180910390f35b3480156100a457600080fd5b506100ad610405565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101316004803603602081101561010557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061018a565b005b34801561013f57600080fd5b5061014861042f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415151561022f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f62656e6966696172792069732061646472657373207a65726f0000000000000081525060200191505060405180910390fd5b600034141515156102a8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600e8152602001807f207a65726f207765692073656e6400000000000000000000000000000000000081525060200191505060405180910390fd5b600034905060006102b882610458565b90506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd3385846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1580156103b257600080fd5b505af11580156103c6573d6000803e3d6000fd5b505050506040513d60208110156103dc57600080fd5b8101908080519060200190929190505050506103f6610476565b505050565b6000600254905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600061046f600254836104e190919063ffffffff16565b9050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156104de573d6000803e3d6000fd5b50565b6000808314156104f45760009050610582565b6000828402905082848281151561050757fe5b0414151561057d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260178152602001807f4d756c7469706c69636174696f6e206f766572666c6f7700000000000000000081525060200191505060405180910390fd5b809150505b9291505056fea165627a7a7230582065d7da36a5ebcd85db02b61d0641422bce8183b5215cb04378e941540c20286c0029",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632c4e722e1461006d578063521eb27314610098578063ec8ac4d8146100ef578063fc0c546a14610133575b61006b3361018a565b005b34801561007957600080fd5b506100826103fb565b6040518082815260200191505060405180910390f35b3480156100a457600080fd5b506100ad610405565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101316004803603602081101561010557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061018a565b005b34801561013f57600080fd5b5061014861042f565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415151561022f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f62656e6966696172792069732061646472657373207a65726f0000000000000081525060200191505060405180910390fd5b600034141515156102a8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252600e8152602001807f207a65726f207765692073656e6400000000000000000000000000000000000081525060200191505060405180910390fd5b600034905060006102b882610458565b90506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd3385846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1580156103b257600080fd5b505af11580156103c6573d6000803e3d6000fd5b505050506040513d60208110156103dc57600080fd5b8101908080519060200190929190505050506103f6610476565b505050565b6000600254905090565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600061046f600254836104e190919063ffffffff16565b9050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156104de573d6000803e3d6000fd5b50565b6000808314156104f45760009050610582565b6000828402905082848281151561050757fe5b0414151561057d576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260178152602001807f4d756c7469706c69636174696f6e206f766572666c6f7700000000000000000081525060200191505060405180910390fd5b809150505b9291505056fea165627a7a7230582065d7da36a5ebcd85db02b61d0641422bce8183b5215cb04378e941540c20286c0029",
+  "sourceMap": "74:1587:0:-;;;247:391;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;247:391:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;356:1;349:4;:8;341:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;418:1;400:20;;:6;:20;;;;392:70;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;506:1;480:28;;488:5;480:28;;;;472:77;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;568:4;560:5;:12;;;;592:6;582:7;;:16;;;;;;;;;;;;;;;;;;617:5;608:6;;:14;;;;;;;;;;;;;;;;;;247:391;;;74:1587;;;;;;",
+  "deployedSourceMap": "74:1587:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;687:21;697:10;687:9;:21::i;:::-;74:1587;909:75;;8:9:-1;5:2;;;30:1;27;20:12;5:2;909:75:0;;;;;;;;;;;;;;;;;;;;;;;811:87;;8:9:-1;5:2;;;30:1;27;20:12;5:2;811:87:0;;;;;;;;;;;;;;;;;;;;;;;;;;;999:258;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;999:258:0;;;;;;;;;;;;;;;;;;;;;;726:75;;8:9:-1;5:2;;;30:1;27;20:12;5:2;726:75:0;;;;;;;;;;;;;;;;;;;;;;;;;;;999:258;1330:1;1308:24;;:10;:24;;;;1300:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1393:1;1380:9;:14;;1372:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1074:17;1094:9;1074:29;;1113:14;1130:26;1146:9;1130:15;:26::i;:::-;1113:43;;1166:6;;;;;;;;;;;:19;;;1186:10;1198:9;1209:6;1166:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1166:50:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1166:50:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1166:50:0;;;;;;;;;;;;;;;;;1226:15;:13;:15::i;:::-;1423:1;;999:258;:::o;909:75::-;946:7;972:5;;965:12;;909:75;:::o;811:87::-;850:15;884:7;;;;;;;;;;;877:14;;811:87;:::o;726:75::-;764:5;788:6;;;;;;;;;;;781:13;;726:75;:::o;1441:120::-;1508:7;1534:20;1548:5;;1534:9;:13;;:20;;;;:::i;:::-;1527:27;;1441:120;;;:::o;1576:78::-;1620:7;;;;;;;;;;;:16;;:27;1637:9;1620:27;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1620:27:0;1576:78::o;59:218:9:-;110:4;133:1;128;:6;125:43;;;156:1;149:8;;;;125:43;186:6;197:1;195;:3;186:12;;223:1;218;216;:3;;;;;;;;:8;208:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;269:1;262:8;;;59:218;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"./ERC20.sol\";\nimport \"./safeMath.sol\";\n\n\ncontract CrowedSale {\n    using safeMath for uint; \n    \n    ERC20 private _token;\n    \n    address payable private _wallet;\n    \n    uint private _rate;\n    \n    \n    \n    constructor(uint rate, address payable wallet, ERC20 token) public payable {\n        \n        require(rate > 0, \"Crowdsale: rate is 0\");\n        require(wallet != address(0), \"Crowdsale: wallet is the zero address\");\n        require(address(token) != address(0), \"Crowdsale: token is the zero address\");\n\n        _rate = rate;\n        _wallet = wallet;\n        _token = token;\n        \n    }\n    \n    function () external payable {\n        buyTokens(msg.sender);\n    }\n\n    \n    function token() public view returns (ERC20) {\n        return _token;\n    }\n\n   \n    function wallet() public view returns (address payable) {\n        return _wallet;\n    }\n\n    \n    function rate() public view returns (uint256) {\n        return _rate;\n    }\n    \n    \n    function buyTokens(address benifiary) public payable preValidate {\n        uint256 weiAmount = msg.value;\n        uint256 tokens = _getTokenAmount(weiAmount);\n        _token.transferFrom(msg.sender, benifiary, tokens);\n        _forwardFunds();\n        \n    }\n    \n    modifier preValidate() {\n        require(msg.sender != address(0), \"benifiary is address zero\");\n        require(msg.value != 0, \" zero wei send\");\n        _;\n    }\n    \n    function _getTokenAmount(uint256 weiAmount) internal view returns (uint256) {\n        return weiAmount.mul(_rate);\n    }\n    \n    \n    function _forwardFunds() internal {\n        _wallet.transfer(msg.value);\n    }\n    \n}\n",
   "sourcePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol",
   "ast": {
     "absolutePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol",
     "exportedSymbols": {
       "CrowedSale": [
-        170
+        172
       ]
     },
-    "id": 171,
+    "id": 173,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -111,13 +111,13 @@
         "src": "0:23:0"
       },
       {
-        "absolutePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/IERC20.sol",
-        "file": "./IERC20.sol",
+        "absolutePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/ERC20.sol",
+        "file": "./ERC20.sol",
         "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 171,
-        "sourceUnit": 504,
-        "src": "25:22:0",
+        "scope": 173,
+        "sourceUnit": 443,
+        "src": "25:21:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -126,9 +126,9 @@
         "file": "./safeMath.sol",
         "id": 3,
         "nodeType": "ImportDirective",
-        "scope": 171,
-        "sourceUnit": 1157,
-        "src": "48:24:0",
+        "scope": 173,
+        "sourceUnit": 1165,
+        "src": "47:24:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -138,9 +138,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 170,
+        "id": 172,
         "linearizedBaseContracts": [
-          170
+          172
         ],
         "name": "CrowedSale",
         "nodeType": "ContractDefinition",
@@ -152,20 +152,20 @@
               "id": 4,
               "name": "safeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1156,
-              "src": "107:8:0",
+              "referencedDeclaration": 1164,
+              "src": "106:8:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_safeMath_$1156",
+                "typeIdentifier": "t_contract$_safeMath_$1164",
                 "typeString": "library safeMath"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "101:24:0",
+            "src": "100:24:0",
             "typeName": {
               "id": 5,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "120:4:0",
+              "src": "119:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -177,24 +177,24 @@
             "id": 8,
             "name": "_token",
             "nodeType": "VariableDeclaration",
-            "scope": 170,
-            "src": "136:21:0",
+            "scope": 172,
+            "src": "135:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IERC20_$503",
-              "typeString": "contract IERC20"
+              "typeIdentifier": "t_contract$_ERC20_$442",
+              "typeString": "contract ERC20"
             },
             "typeName": {
               "contractScope": null,
               "id": 7,
-              "name": "IERC20",
+              "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 503,
-              "src": "136:6:0",
+              "referencedDeclaration": 442,
+              "src": "135:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC20_$503",
-                "typeString": "contract IERC20"
+                "typeIdentifier": "t_contract$_ERC20_$442",
+                "typeString": "contract ERC20"
               }
             },
             "value": null,
@@ -205,8 +205,8 @@
             "id": 10,
             "name": "_wallet",
             "nodeType": "VariableDeclaration",
-            "scope": 170,
-            "src": "168:31:0",
+            "scope": 172,
+            "src": "166:31:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -217,7 +217,7 @@
               "id": 9,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "168:15:0",
+              "src": "166:15:0",
               "stateMutability": "payable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address_payable",
@@ -232,8 +232,8 @@
             "id": 12,
             "name": "_rate",
             "nodeType": "VariableDeclaration",
-            "scope": 170,
-            "src": "210:18:0",
+            "scope": 172,
+            "src": "208:18:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -244,7 +244,7 @@
               "id": 11,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "210:4:0",
+              "src": "208:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -257,7 +257,7 @@
             "body": {
               "id": 60,
               "nodeType": "Block",
-              "src": "325:316:0",
+              "src": "322:316:0",
               "statements": [
                 {
                   "expression": {
@@ -281,7 +281,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 14,
-                          "src": "352:4:0",
+                          "src": "349:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -299,7 +299,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "359:1:0",
+                          "src": "356:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -307,7 +307,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "352:8:0",
+                        "src": "349:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -323,7 +323,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "362:22:0",
+                        "src": "359:22:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_8b72f2adcfe62a5614b704f585faa49282940ab878a00620f85b716aa41f6d78",
@@ -347,11 +347,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "344:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "341:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -365,7 +365,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "344:41:0",
+                    "src": "341:41:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -373,7 +373,7 @@
                   },
                   "id": 27,
                   "nodeType": "ExpressionStatement",
-                  "src": "344:41:0"
+                  "src": "341:41:0"
                 },
                 {
                   "expression": {
@@ -397,7 +397,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 16,
-                          "src": "403:6:0",
+                          "src": "400:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -418,7 +418,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "421:1:0",
+                              "src": "418:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -440,7 +440,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "413:7:0",
+                            "src": "410:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -455,13 +455,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "413:10:0",
+                          "src": "410:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
                           }
                         },
-                        "src": "403:20:0",
+                        "src": "400:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -477,7 +477,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "425:39:0",
+                        "src": "422:39:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_e2b432b30cf592332baa824ba45b03380bf314917ec1eb0e2522d19fb933b9f6",
@@ -501,11 +501,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "395:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "392:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -519,7 +519,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "395:70:0",
+                    "src": "392:70:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -527,7 +527,7 @@
                   },
                   "id": 36,
                   "nodeType": "ExpressionStatement",
-                  "src": "395:70:0"
+                  "src": "392:70:0"
                 },
                 {
                   "expression": {
@@ -554,18 +554,18 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 18,
-                              "src": "491:5:0",
+                              "src": "488:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IERC20_$503",
-                                "typeString": "contract IERC20"
+                                "typeIdentifier": "t_contract$_ERC20_$442",
+                                "typeString": "contract ERC20"
                               }
                             }
                           ],
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IERC20_$503",
-                                "typeString": "contract IERC20"
+                                "typeIdentifier": "t_contract$_ERC20_$442",
+                                "typeString": "contract ERC20"
                               }
                             ],
                             "id": 38,
@@ -574,7 +574,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "483:7:0",
+                            "src": "480:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -589,7 +589,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "483:14:0",
+                          "src": "480:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -610,7 +610,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "509:1:0",
+                              "src": "506:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -632,7 +632,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "501:7:0",
+                            "src": "498:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -647,13 +647,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "501:10:0",
+                          "src": "498:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
                           }
                         },
-                        "src": "483:28:0",
+                        "src": "480:28:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -669,7 +669,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "513:38:0",
+                        "src": "510:38:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_64ba396754921ac5cdc6388a09272386edd92a5c198850f31a7c165ba7c79b82",
@@ -693,11 +693,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "475:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "472:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -711,7 +711,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "475:77:0",
+                    "src": "472:77:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -719,7 +719,7 @@
                   },
                   "id": 47,
                   "nodeType": "ExpressionStatement",
-                  "src": "475:77:0"
+                  "src": "472:77:0"
                 },
                 {
                   "expression": {
@@ -736,7 +736,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 12,
-                      "src": "563:5:0",
+                      "src": "560:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -751,13 +751,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 14,
-                      "src": "571:4:0",
+                      "src": "568:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "563:12:0",
+                    "src": "560:12:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -765,7 +765,7 @@
                   },
                   "id": 51,
                   "nodeType": "ExpressionStatement",
-                  "src": "563:12:0"
+                  "src": "560:12:0"
                 },
                 {
                   "expression": {
@@ -782,7 +782,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 10,
-                      "src": "585:7:0",
+                      "src": "582:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
@@ -797,13 +797,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 16,
-                      "src": "595:6:0",
+                      "src": "592:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
                       }
                     },
-                    "src": "585:16:0",
+                    "src": "582:16:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
@@ -811,7 +811,7 @@
                   },
                   "id": 55,
                   "nodeType": "ExpressionStatement",
-                  "src": "585:16:0"
+                  "src": "582:16:0"
                 },
                 {
                   "expression": {
@@ -828,10 +828,10 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 8,
-                      "src": "611:6:0",
+                      "src": "608:6:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$503",
-                        "typeString": "contract IERC20"
+                        "typeIdentifier": "t_contract$_ERC20_$442",
+                        "typeString": "contract ERC20"
                       }
                     },
                     "nodeType": "Assignment",
@@ -843,21 +843,21 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "620:5:0",
+                      "src": "617:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$503",
-                        "typeString": "contract IERC20"
+                        "typeIdentifier": "t_contract$_ERC20_$442",
+                        "typeString": "contract ERC20"
                       }
                     },
-                    "src": "611:14:0",
+                    "src": "608:14:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "id": 59,
                   "nodeType": "ExpressionStatement",
-                  "src": "611:14:0"
+                  "src": "608:14:0"
                 }
               ]
             },
@@ -878,7 +878,7 @@
                   "name": "rate",
                   "nodeType": "VariableDeclaration",
                   "scope": 61,
-                  "src": "261:9:0",
+                  "src": "259:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -889,7 +889,7 @@
                     "id": 13,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "261:4:0",
+                    "src": "259:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -904,7 +904,7 @@
                   "name": "wallet",
                   "nodeType": "VariableDeclaration",
                   "scope": 61,
-                  "src": "272:22:0",
+                  "src": "270:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -915,7 +915,7 @@
                     "id": 15,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "272:15:0",
+                    "src": "270:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -931,39 +931,39 @@
                   "name": "token",
                   "nodeType": "VariableDeclaration",
                   "scope": 61,
-                  "src": "296:12:0",
+                  "src": "294:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20_$503",
-                    "typeString": "contract IERC20"
+                    "typeIdentifier": "t_contract$_ERC20_$442",
+                    "typeString": "contract ERC20"
                   },
                   "typeName": {
                     "contractScope": null,
                     "id": 17,
-                    "name": "IERC20",
+                    "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 503,
-                    "src": "296:6:0",
+                    "referencedDeclaration": 442,
+                    "src": "294:5:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "260:49:0"
+              "src": "258:48:0"
             },
             "returnParameters": {
               "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "325:0:0"
+              "src": "322:0:0"
             },
-            "scope": 170,
-            "src": "249:392:0",
+            "scope": 172,
+            "src": "247:391:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
@@ -972,7 +972,7 @@
             "body": {
               "id": 69,
               "nodeType": "Block",
-              "src": "680:38:0",
+              "src": "677:38:0",
               "statements": [
                 {
                   "expression": {
@@ -986,8 +986,8 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1463,
-                          "src": "700:3:0",
+                          "referencedDeclaration": 1471,
+                          "src": "697:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -1001,7 +1001,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "700:10:0",
+                        "src": "697:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1019,8 +1019,8 @@
                       "name": "buyTokens",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 123,
-                      "src": "690:9:0",
+                      "referencedDeclaration": 125,
+                      "src": "687:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
@@ -1034,7 +1034,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "690:21:0",
+                    "src": "687:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1042,7 +1042,7 @@
                   },
                   "id": 68,
                   "nodeType": "ExpressionStatement",
-                  "src": "690:21:0"
+                  "src": "687:21:0"
                 }
               ]
             },
@@ -1057,16 +1057,16 @@
               "id": 62,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "660:2:0"
+              "src": "657:2:0"
             },
             "returnParameters": {
               "id": 63,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "680:0:0"
+              "src": "677:0:0"
             },
-            "scope": 170,
-            "src": "651:67:0",
+            "scope": 172,
+            "src": "648:67:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
@@ -1075,7 +1075,7 @@
             "body": {
               "id": 77,
               "nodeType": "Block",
-              "src": "775:30:0",
+              "src": "771:30:0",
               "statements": [
                 {
                   "expression": {
@@ -1085,16 +1085,16 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 8,
-                    "src": "792:6:0",
+                    "src": "788:6:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "functionReturnParameters": 74,
                   "id": 76,
                   "nodeType": "Return",
-                  "src": "785:13:0"
+                  "src": "781:13:0"
                 }
               ]
             },
@@ -1109,7 +1109,7 @@
               "id": 71,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "743:2:0"
+              "src": "740:2:0"
             },
             "returnParameters": {
               "id": 74,
@@ -1121,33 +1121,33 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 78,
-                  "src": "767:6:0",
+                  "src": "764:5:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20_$503",
-                    "typeString": "contract IERC20"
+                    "typeIdentifier": "t_contract$_ERC20_$442",
+                    "typeString": "contract ERC20"
                   },
                   "typeName": {
                     "contractScope": null,
                     "id": 72,
-                    "name": "IERC20",
+                    "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 503,
-                    "src": "767:6:0",
+                    "referencedDeclaration": 442,
+                    "src": "764:5:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "766:8:0"
+              "src": "763:7:0"
             },
-            "scope": 170,
-            "src": "729:76:0",
+            "scope": 172,
+            "src": "726:75:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -1156,7 +1156,7 @@
             "body": {
               "id": 85,
               "nodeType": "Block",
-              "src": "871:31:0",
+              "src": "867:31:0",
               "statements": [
                 {
                   "expression": {
@@ -1166,7 +1166,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 10,
-                    "src": "888:7:0",
+                    "src": "884:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
@@ -1175,7 +1175,7 @@
                   "functionReturnParameters": 82,
                   "id": 84,
                   "nodeType": "Return",
-                  "src": "881:14:0"
+                  "src": "877:14:0"
                 }
               ]
             },
@@ -1190,7 +1190,7 @@
               "id": 79,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "830:2:0"
+              "src": "826:2:0"
             },
             "returnParameters": {
               "id": 82,
@@ -1202,7 +1202,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 86,
-                  "src": "854:15:0",
+                  "src": "850:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1213,7 +1213,7 @@
                     "id": 80,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "854:15:0",
+                    "src": "850:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -1224,10 +1224,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "853:17:0"
+              "src": "849:17:0"
             },
-            "scope": 170,
-            "src": "815:87:0",
+            "scope": 172,
+            "src": "811:87:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -1236,7 +1236,7 @@
             "body": {
               "id": 93,
               "nodeType": "Block",
-              "src": "959:29:0",
+              "src": "955:29:0",
               "statements": [
                 {
                   "expression": {
@@ -1246,7 +1246,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 12,
-                    "src": "976:5:0",
+                    "src": "972:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1255,7 +1255,7 @@
                   "functionReturnParameters": 90,
                   "id": 92,
                   "nodeType": "Return",
-                  "src": "969:12:0"
+                  "src": "965:12:0"
                 }
               ]
             },
@@ -1270,7 +1270,7 @@
               "id": 87,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "926:2:0"
+              "src": "922:2:0"
             },
             "returnParameters": {
               "id": 90,
@@ -1282,7 +1282,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 94,
-                  "src": "950:7:0",
+                  "src": "946:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1293,7 +1293,7 @@
                     "id": 88,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "950:7:0",
+                    "src": "946:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1303,19 +1303,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "949:9:0"
+              "src": "945:9:0"
             },
-            "scope": 170,
-            "src": "913:75:0",
+            "scope": 172,
+            "src": "909:75:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 122,
+              "id": 124,
               "nodeType": "Block",
-              "src": "1068:176:0",
+              "src": "1064:193:0",
               "statements": [
                 {
                   "assignments": [
@@ -1327,8 +1327,8 @@
                       "id": 102,
                       "name": "weiAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 122,
-                      "src": "1078:17:0",
+                      "scope": 124,
+                      "src": "1074:17:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1339,7 +1339,7 @@
                         "id": 101,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1078:7:0",
+                        "src": "1074:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1358,8 +1358,8 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1463,
-                      "src": "1098:3:0",
+                      "referencedDeclaration": 1471,
+                      "src": "1094:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -1373,14 +1373,14 @@
                     "memberName": "value",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "1098:9:0",
+                    "src": "1094:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1078:29:0"
+                  "src": "1074:29:0"
                 },
                 {
                   "assignments": [
@@ -1392,8 +1392,8 @@
                       "id": 107,
                       "name": "tokens",
                       "nodeType": "VariableDeclaration",
-                      "scope": 122,
-                      "src": "1117:14:0",
+                      "scope": 124,
+                      "src": "1113:14:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1404,7 +1404,7 @@
                         "id": 106,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1117:7:0",
+                        "src": "1113:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1425,7 +1425,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 102,
-                        "src": "1150:9:0",
+                        "src": "1146:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1443,8 +1443,8 @@
                       "name": "_getTokenAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 158,
-                      "src": "1134:15:0",
+                      "referencedDeclaration": 160,
+                      "src": "1130:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) view returns (uint256)"
@@ -1458,14 +1458,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1134:26:0",
+                    "src": "1130:26:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1117:43:0"
+                  "src": "1113:43:0"
                 },
                 {
                   "expression": {
@@ -1473,12 +1473,43 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 115,
+                        "id": 116,
+                        "name": "benifiary",
+                        "nodeType": "MemberAccess",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": null,
+                        "src": "1186:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 115,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1471,
+                          "src": "1186:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 117,
                         "name": "benifiary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 96,
-                        "src": "1186:9:0",
+                        "src": "1198:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1486,12 +1517,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 116,
+                        "id": 118,
                         "name": "tokens",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 107,
-                        "src": "1196:6:0",
+                        "src": "1209:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1500,6 +1531,10 @@
                     ],
                     "expression": {
                       "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
                         {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1516,10 +1551,10 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1170:6:0",
+                        "src": "1166:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$503",
-                          "typeString": "contract IERC20"
+                          "typeIdentifier": "t_contract$_ERC20_$442",
+                          "typeString": "contract ERC20"
                         }
                       },
                       "id": 114,
@@ -1527,16 +1562,16 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberName": "transfer",
+                      "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 457,
-                      "src": "1170:15:0",
+                      "referencedDeclaration": 361,
+                      "src": "1166:19:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
-                        "typeString": "function (address,uint256) external returns (bool)"
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 117,
+                    "id": 119,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1544,15 +1579,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1170:33:0",
+                    "src": "1166:50:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 118,
+                  "id": 120,
                   "nodeType": "ExpressionStatement",
-                  "src": "1170:33:0"
+                  "src": "1166:50:0"
                 },
                 {
                   "expression": {
@@ -1560,18 +1595,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 119,
+                      "id": 121,
                       "name": "_forwardFunds",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 169,
-                      "src": "1213:13:0",
+                      "referencedDeclaration": 171,
+                      "src": "1226:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 120,
+                    "id": 122,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1579,20 +1614,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1213:15:0",
+                    "src": "1226:15:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 121,
+                  "id": 123,
                   "nodeType": "ExpressionStatement",
-                  "src": "1213:15:0"
+                  "src": "1226:15:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 123,
+            "id": 125,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -1605,15 +1640,15 @@
                   "name": "preValidate",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 145,
-                  "src": "1056:11:0",
+                  "referencedDeclaration": 147,
+                  "src": "1052:11:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1056:11:0"
+                "src": "1052:11:0"
               }
             ],
             "name": "buyTokens",
@@ -1627,8 +1662,8 @@
                   "id": 96,
                   "name": "benifiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 123,
-                  "src": "1022:17:0",
+                  "scope": 125,
+                  "src": "1018:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1639,7 +1674,7 @@
                     "id": 95,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1022:7:0",
+                    "src": "1018:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1650,25 +1685,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1021:19:0"
+              "src": "1017:19:0"
             },
             "returnParameters": {
               "id": 100,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1068:0:0"
+              "src": "1064:0:0"
             },
-            "scope": 170,
-            "src": "1003:241:0",
+            "scope": 172,
+            "src": "999:258:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 144,
+              "id": 146,
               "nodeType": "Block",
-              "src": "1277:141:0",
+              "src": "1290:141:0",
               "statements": [
                 {
                   "expression": {
@@ -1680,7 +1715,7 @@
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         },
-                        "id": 131,
+                        "id": 133,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1689,18 +1724,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 126,
+                            "id": 128,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1463,
-                            "src": "1295:3:0",
+                            "referencedDeclaration": 1471,
+                            "src": "1308:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 127,
+                          "id": 129,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1708,7 +1743,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1295:10:0",
+                          "src": "1308:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -1722,14 +1757,14 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 129,
+                              "id": 131,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "1317:1:0",
+                              "src": "1330:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -1745,20 +1780,20 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 128,
+                            "id": 130,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "1309:7:0",
+                            "src": "1322:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": "address"
                           },
-                          "id": 130,
+                          "id": 132,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1766,13 +1801,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1309:10:0",
+                          "src": "1322:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
                           }
                         },
-                        "src": "1295:24:0",
+                        "src": "1308:24:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1781,14 +1816,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "62656e6966696172792069732061646472657373207a65726f",
-                        "id": 132,
+                        "id": 134,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1321:27:0",
+                        "src": "1334:27:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_281c05a7b6564dea878c115d1c0325f5f5c5dc98f132ae3906fcc87873dd5152",
@@ -1808,21 +1843,21 @@
                           "typeString": "literal_string \"benifiary is address zero\""
                         }
                       ],
-                      "id": 125,
+                      "id": 127,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "1287:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "1300:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 133,
+                    "id": 135,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1830,15 +1865,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1287:62:0",
+                    "src": "1300:62:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 134,
+                  "id": 136,
                   "nodeType": "ExpressionStatement",
-                  "src": "1287:62:0"
+                  "src": "1300:62:0"
                 },
                 {
                   "expression": {
@@ -1850,7 +1885,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 139,
+                        "id": 141,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1859,18 +1894,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 136,
+                            "id": 138,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1463,
-                            "src": "1367:3:0",
+                            "referencedDeclaration": 1471,
+                            "src": "1380:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 137,
+                          "id": 139,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1878,7 +1913,7 @@
                           "memberName": "value",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1367:9:0",
+                          "src": "1380:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1889,14 +1924,14 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 138,
+                          "id": 140,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1380:1:0",
+                          "src": "1393:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -1904,7 +1939,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "1367:14:0",
+                        "src": "1380:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1913,14 +1948,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "207a65726f207765692073656e64",
-                        "id": 140,
+                        "id": 142,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1383:16:0",
+                        "src": "1396:16:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_fbb384be4a727f3818a192359eaef10f9f7b562ec40d551de54026298743d192",
@@ -1940,21 +1975,21 @@
                           "typeString": "literal_string \" zero wei send\""
                         }
                       ],
-                      "id": 135,
+                      "id": 137,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "1359:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "1372:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 141,
+                    "id": 143,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1962,41 +1997,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1359:41:0",
+                    "src": "1372:41:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 142,
+                  "id": 144,
                   "nodeType": "ExpressionStatement",
-                  "src": "1359:41:0"
+                  "src": "1372:41:0"
                 },
                 {
-                  "id": 143,
+                  "id": 145,
                   "nodeType": "PlaceholderStatement",
-                  "src": "1410:1:0"
+                  "src": "1423:1:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 145,
+            "id": 147,
             "name": "preValidate",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 124,
+              "id": 126,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1274:2:0"
+              "src": "1287:2:0"
             },
-            "src": "1254:164:0",
+            "src": "1267:164:0",
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 157,
+              "id": 159,
               "nodeType": "Block",
-              "src": "1504:44:0",
+              "src": "1517:44:0",
               "statements": [
                 {
                   "expression": {
@@ -2004,12 +2039,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 154,
+                        "id": 156,
                         "name": "_rate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 12,
-                        "src": "1535:5:0",
+                        "src": "1548:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2025,32 +2060,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 152,
+                        "id": 154,
                         "name": "weiAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 147,
-                        "src": "1521:9:0",
+                        "referencedDeclaration": 149,
+                        "src": "1534:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "id": 153,
+                      "id": 155,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1055,
-                      "src": "1521:13:0",
+                      "referencedDeclaration": 1063,
+                      "src": "1534:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 155,
+                    "id": 157,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2058,37 +2093,37 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1521:20:0",
+                    "src": "1534:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 151,
-                  "id": 156,
+                  "functionReturnParameters": 153,
+                  "id": 158,
                   "nodeType": "Return",
-                  "src": "1514:27:0"
+                  "src": "1527:27:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 158,
+            "id": 160,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_getTokenAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 148,
+              "id": 150,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 147,
+                  "id": 149,
                   "name": "weiAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 158,
-                  "src": "1453:17:0",
+                  "scope": 160,
+                  "src": "1466:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2096,10 +2131,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 146,
+                    "id": 148,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1453:7:0",
+                    "src": "1466:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2109,19 +2144,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1452:19:0"
+              "src": "1465:19:0"
             },
             "returnParameters": {
-              "id": 151,
+              "id": 153,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 150,
+                  "id": 152,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 158,
-                  "src": "1495:7:0",
+                  "scope": 160,
+                  "src": "1508:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2129,10 +2164,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 149,
+                    "id": 151,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1495:7:0",
+                    "src": "1508:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2142,19 +2177,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1494:9:0"
+              "src": "1507:9:0"
             },
-            "scope": 170,
-            "src": "1428:120:0",
+            "scope": 172,
+            "src": "1441:120:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 168,
+              "id": 170,
               "nodeType": "Block",
-              "src": "1597:44:0",
+              "src": "1610:44:0",
               "statements": [
                 {
                   "expression": {
@@ -2164,18 +2199,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 164,
+                          "id": 166,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1463,
-                          "src": "1624:3:0",
+                          "referencedDeclaration": 1471,
+                          "src": "1637:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 165,
+                        "id": 167,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2183,7 +2218,7 @@
                         "memberName": "value",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1624:9:0",
+                        "src": "1637:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2199,18 +2234,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 161,
+                        "id": 163,
                         "name": "_wallet",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 10,
-                        "src": "1607:7:0",
+                        "src": "1620:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 163,
+                      "id": 165,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2218,13 +2253,13 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1607:16:0",
+                      "src": "1620:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 166,
+                    "id": 168,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2232,58 +2267,58 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1607:27:0",
+                    "src": "1620:27:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 167,
+                  "id": 169,
                   "nodeType": "ExpressionStatement",
-                  "src": "1607:27:0"
+                  "src": "1620:27:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 169,
+            "id": 171,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_forwardFunds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 159,
+              "id": 161,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1585:2:0"
+              "src": "1598:2:0"
             },
             "returnParameters": {
-              "id": 160,
+              "id": 162,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1597:0:0"
+              "src": "1610:0:0"
             },
-            "scope": 170,
-            "src": "1563:78:0",
+            "scope": 172,
+            "src": "1576:78:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 171,
-        "src": "75:1573:0"
+        "scope": 173,
+        "src": "74:1587:0"
       }
     ],
-    "src": "0:1649:0"
+    "src": "0:1662:0"
   },
   "legacyAST": {
     "absolutePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/CrowedSale.sol",
     "exportedSymbols": {
       "CrowedSale": [
-        170
+        172
       ]
     },
-    "id": 171,
+    "id": 173,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -2298,13 +2333,13 @@
         "src": "0:23:0"
       },
       {
-        "absolutePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/IERC20.sol",
-        "file": "./IERC20.sol",
+        "absolutePath": "/home/sam/Documents/GitHub/My-etherum-world/contracts/ERC20.sol",
+        "file": "./ERC20.sol",
         "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 171,
-        "sourceUnit": 504,
-        "src": "25:22:0",
+        "scope": 173,
+        "sourceUnit": 443,
+        "src": "25:21:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -2313,9 +2348,9 @@
         "file": "./safeMath.sol",
         "id": 3,
         "nodeType": "ImportDirective",
-        "scope": 171,
-        "sourceUnit": 1157,
-        "src": "48:24:0",
+        "scope": 173,
+        "sourceUnit": 1165,
+        "src": "47:24:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -2325,9 +2360,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 170,
+        "id": 172,
         "linearizedBaseContracts": [
-          170
+          172
         ],
         "name": "CrowedSale",
         "nodeType": "ContractDefinition",
@@ -2339,20 +2374,20 @@
               "id": 4,
               "name": "safeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1156,
-              "src": "107:8:0",
+              "referencedDeclaration": 1164,
+              "src": "106:8:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_safeMath_$1156",
+                "typeIdentifier": "t_contract$_safeMath_$1164",
                 "typeString": "library safeMath"
               }
             },
             "nodeType": "UsingForDirective",
-            "src": "101:24:0",
+            "src": "100:24:0",
             "typeName": {
               "id": 5,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "120:4:0",
+              "src": "119:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -2364,24 +2399,24 @@
             "id": 8,
             "name": "_token",
             "nodeType": "VariableDeclaration",
-            "scope": 170,
-            "src": "136:21:0",
+            "scope": 172,
+            "src": "135:20:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IERC20_$503",
-              "typeString": "contract IERC20"
+              "typeIdentifier": "t_contract$_ERC20_$442",
+              "typeString": "contract ERC20"
             },
             "typeName": {
               "contractScope": null,
               "id": 7,
-              "name": "IERC20",
+              "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 503,
-              "src": "136:6:0",
+              "referencedDeclaration": 442,
+              "src": "135:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC20_$503",
-                "typeString": "contract IERC20"
+                "typeIdentifier": "t_contract$_ERC20_$442",
+                "typeString": "contract ERC20"
               }
             },
             "value": null,
@@ -2392,8 +2427,8 @@
             "id": 10,
             "name": "_wallet",
             "nodeType": "VariableDeclaration",
-            "scope": 170,
-            "src": "168:31:0",
+            "scope": 172,
+            "src": "166:31:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2404,7 +2439,7 @@
               "id": 9,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "168:15:0",
+              "src": "166:15:0",
               "stateMutability": "payable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address_payable",
@@ -2419,8 +2454,8 @@
             "id": 12,
             "name": "_rate",
             "nodeType": "VariableDeclaration",
-            "scope": 170,
-            "src": "210:18:0",
+            "scope": 172,
+            "src": "208:18:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2431,7 +2466,7 @@
               "id": 11,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "210:4:0",
+              "src": "208:4:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -2444,7 +2479,7 @@
             "body": {
               "id": 60,
               "nodeType": "Block",
-              "src": "325:316:0",
+              "src": "322:316:0",
               "statements": [
                 {
                   "expression": {
@@ -2468,7 +2503,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 14,
-                          "src": "352:4:0",
+                          "src": "349:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2486,7 +2521,7 @@
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "359:1:0",
+                          "src": "356:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -2494,7 +2529,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "352:8:0",
+                        "src": "349:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2510,7 +2545,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "362:22:0",
+                        "src": "359:22:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_8b72f2adcfe62a5614b704f585faa49282940ab878a00620f85b716aa41f6d78",
@@ -2534,11 +2569,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "344:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "341:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -2552,7 +2587,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "344:41:0",
+                    "src": "341:41:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2560,7 +2595,7 @@
                   },
                   "id": 27,
                   "nodeType": "ExpressionStatement",
-                  "src": "344:41:0"
+                  "src": "341:41:0"
                 },
                 {
                   "expression": {
@@ -2584,7 +2619,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 16,
-                          "src": "403:6:0",
+                          "src": "400:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -2605,7 +2640,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "421:1:0",
+                              "src": "418:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -2627,7 +2662,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "413:7:0",
+                            "src": "410:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2642,13 +2677,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "413:10:0",
+                          "src": "410:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
                           }
                         },
-                        "src": "403:20:0",
+                        "src": "400:20:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2664,7 +2699,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "425:39:0",
+                        "src": "422:39:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_e2b432b30cf592332baa824ba45b03380bf314917ec1eb0e2522d19fb933b9f6",
@@ -2688,11 +2723,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "395:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "392:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -2706,7 +2741,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "395:70:0",
+                    "src": "392:70:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2714,7 +2749,7 @@
                   },
                   "id": 36,
                   "nodeType": "ExpressionStatement",
-                  "src": "395:70:0"
+                  "src": "392:70:0"
                 },
                 {
                   "expression": {
@@ -2741,18 +2776,18 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 18,
-                              "src": "491:5:0",
+                              "src": "488:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IERC20_$503",
-                                "typeString": "contract IERC20"
+                                "typeIdentifier": "t_contract$_ERC20_$442",
+                                "typeString": "contract ERC20"
                               }
                             }
                           ],
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IERC20_$503",
-                                "typeString": "contract IERC20"
+                                "typeIdentifier": "t_contract$_ERC20_$442",
+                                "typeString": "contract ERC20"
                               }
                             ],
                             "id": 38,
@@ -2761,7 +2796,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "483:7:0",
+                            "src": "480:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2776,7 +2811,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "483:14:0",
+                          "src": "480:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2797,7 +2832,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "509:1:0",
+                              "src": "506:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -2819,7 +2854,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "501:7:0",
+                            "src": "498:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2834,13 +2869,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "501:10:0",
+                          "src": "498:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
                           }
                         },
-                        "src": "483:28:0",
+                        "src": "480:28:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -2856,7 +2891,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "513:38:0",
+                        "src": "510:38:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_64ba396754921ac5cdc6388a09272386edd92a5c198850f31a7c165ba7c79b82",
@@ -2880,11 +2915,11 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "475:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "472:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -2898,7 +2933,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "475:77:0",
+                    "src": "472:77:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2906,7 +2941,7 @@
                   },
                   "id": 47,
                   "nodeType": "ExpressionStatement",
-                  "src": "475:77:0"
+                  "src": "472:77:0"
                 },
                 {
                   "expression": {
@@ -2923,7 +2958,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 12,
-                      "src": "563:5:0",
+                      "src": "560:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2938,13 +2973,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 14,
-                      "src": "571:4:0",
+                      "src": "568:4:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "563:12:0",
+                    "src": "560:12:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2952,7 +2987,7 @@
                   },
                   "id": 51,
                   "nodeType": "ExpressionStatement",
-                  "src": "563:12:0"
+                  "src": "560:12:0"
                 },
                 {
                   "expression": {
@@ -2969,7 +3004,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 10,
-                      "src": "585:7:0",
+                      "src": "582:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
@@ -2984,13 +3019,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 16,
-                      "src": "595:6:0",
+                      "src": "592:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
                       }
                     },
-                    "src": "585:16:0",
+                    "src": "582:16:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
@@ -2998,7 +3033,7 @@
                   },
                   "id": 55,
                   "nodeType": "ExpressionStatement",
-                  "src": "585:16:0"
+                  "src": "582:16:0"
                 },
                 {
                   "expression": {
@@ -3015,10 +3050,10 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 8,
-                      "src": "611:6:0",
+                      "src": "608:6:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$503",
-                        "typeString": "contract IERC20"
+                        "typeIdentifier": "t_contract$_ERC20_$442",
+                        "typeString": "contract ERC20"
                       }
                     },
                     "nodeType": "Assignment",
@@ -3030,21 +3065,21 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "620:5:0",
+                      "src": "617:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC20_$503",
-                        "typeString": "contract IERC20"
+                        "typeIdentifier": "t_contract$_ERC20_$442",
+                        "typeString": "contract ERC20"
                       }
                     },
-                    "src": "611:14:0",
+                    "src": "608:14:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "id": 59,
                   "nodeType": "ExpressionStatement",
-                  "src": "611:14:0"
+                  "src": "608:14:0"
                 }
               ]
             },
@@ -3065,7 +3100,7 @@
                   "name": "rate",
                   "nodeType": "VariableDeclaration",
                   "scope": 61,
-                  "src": "261:9:0",
+                  "src": "259:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3076,7 +3111,7 @@
                     "id": 13,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "261:4:0",
+                    "src": "259:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3091,7 +3126,7 @@
                   "name": "wallet",
                   "nodeType": "VariableDeclaration",
                   "scope": 61,
-                  "src": "272:22:0",
+                  "src": "270:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3102,7 +3137,7 @@
                     "id": 15,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "272:15:0",
+                    "src": "270:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -3118,39 +3153,39 @@
                   "name": "token",
                   "nodeType": "VariableDeclaration",
                   "scope": 61,
-                  "src": "296:12:0",
+                  "src": "294:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20_$503",
-                    "typeString": "contract IERC20"
+                    "typeIdentifier": "t_contract$_ERC20_$442",
+                    "typeString": "contract ERC20"
                   },
                   "typeName": {
                     "contractScope": null,
                     "id": 17,
-                    "name": "IERC20",
+                    "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 503,
-                    "src": "296:6:0",
+                    "referencedDeclaration": 442,
+                    "src": "294:5:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "260:49:0"
+              "src": "258:48:0"
             },
             "returnParameters": {
               "id": 20,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "325:0:0"
+              "src": "322:0:0"
             },
-            "scope": 170,
-            "src": "249:392:0",
+            "scope": 172,
+            "src": "247:391:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
@@ -3159,7 +3194,7 @@
             "body": {
               "id": 69,
               "nodeType": "Block",
-              "src": "680:38:0",
+              "src": "677:38:0",
               "statements": [
                 {
                   "expression": {
@@ -3173,8 +3208,8 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1463,
-                          "src": "700:3:0",
+                          "referencedDeclaration": 1471,
+                          "src": "697:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -3188,7 +3223,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "700:10:0",
+                        "src": "697:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -3206,8 +3241,8 @@
                       "name": "buyTokens",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 123,
-                      "src": "690:9:0",
+                      "referencedDeclaration": 125,
+                      "src": "687:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
@@ -3221,7 +3256,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "690:21:0",
+                    "src": "687:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3229,7 +3264,7 @@
                   },
                   "id": 68,
                   "nodeType": "ExpressionStatement",
-                  "src": "690:21:0"
+                  "src": "687:21:0"
                 }
               ]
             },
@@ -3244,16 +3279,16 @@
               "id": 62,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "660:2:0"
+              "src": "657:2:0"
             },
             "returnParameters": {
               "id": 63,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "680:0:0"
+              "src": "677:0:0"
             },
-            "scope": 170,
-            "src": "651:67:0",
+            "scope": 172,
+            "src": "648:67:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
@@ -3262,7 +3297,7 @@
             "body": {
               "id": 77,
               "nodeType": "Block",
-              "src": "775:30:0",
+              "src": "771:30:0",
               "statements": [
                 {
                   "expression": {
@@ -3272,16 +3307,16 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 8,
-                    "src": "792:6:0",
+                    "src": "788:6:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "functionReturnParameters": 74,
                   "id": 76,
                   "nodeType": "Return",
-                  "src": "785:13:0"
+                  "src": "781:13:0"
                 }
               ]
             },
@@ -3296,7 +3331,7 @@
               "id": 71,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "743:2:0"
+              "src": "740:2:0"
             },
             "returnParameters": {
               "id": 74,
@@ -3308,33 +3343,33 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 78,
-                  "src": "767:6:0",
+                  "src": "764:5:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC20_$503",
-                    "typeString": "contract IERC20"
+                    "typeIdentifier": "t_contract$_ERC20_$442",
+                    "typeString": "contract ERC20"
                   },
                   "typeName": {
                     "contractScope": null,
                     "id": 72,
-                    "name": "IERC20",
+                    "name": "ERC20",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 503,
-                    "src": "767:6:0",
+                    "referencedDeclaration": 442,
+                    "src": "764:5:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC20_$503",
-                      "typeString": "contract IERC20"
+                      "typeIdentifier": "t_contract$_ERC20_$442",
+                      "typeString": "contract ERC20"
                     }
                   },
                   "value": null,
                   "visibility": "internal"
                 }
               ],
-              "src": "766:8:0"
+              "src": "763:7:0"
             },
-            "scope": 170,
-            "src": "729:76:0",
+            "scope": 172,
+            "src": "726:75:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -3343,7 +3378,7 @@
             "body": {
               "id": 85,
               "nodeType": "Block",
-              "src": "871:31:0",
+              "src": "867:31:0",
               "statements": [
                 {
                   "expression": {
@@ -3353,7 +3388,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 10,
-                    "src": "888:7:0",
+                    "src": "884:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
@@ -3362,7 +3397,7 @@
                   "functionReturnParameters": 82,
                   "id": 84,
                   "nodeType": "Return",
-                  "src": "881:14:0"
+                  "src": "877:14:0"
                 }
               ]
             },
@@ -3377,7 +3412,7 @@
               "id": 79,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "830:2:0"
+              "src": "826:2:0"
             },
             "returnParameters": {
               "id": 82,
@@ -3389,7 +3424,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 86,
-                  "src": "854:15:0",
+                  "src": "850:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3400,7 +3435,7 @@
                     "id": 80,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "854:15:0",
+                    "src": "850:15:0",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -3411,10 +3446,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "853:17:0"
+              "src": "849:17:0"
             },
-            "scope": 170,
-            "src": "815:87:0",
+            "scope": 172,
+            "src": "811:87:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -3423,7 +3458,7 @@
             "body": {
               "id": 93,
               "nodeType": "Block",
-              "src": "959:29:0",
+              "src": "955:29:0",
               "statements": [
                 {
                   "expression": {
@@ -3433,7 +3468,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 12,
-                    "src": "976:5:0",
+                    "src": "972:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3442,7 +3477,7 @@
                   "functionReturnParameters": 90,
                   "id": 92,
                   "nodeType": "Return",
-                  "src": "969:12:0"
+                  "src": "965:12:0"
                 }
               ]
             },
@@ -3457,7 +3492,7 @@
               "id": 87,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "926:2:0"
+              "src": "922:2:0"
             },
             "returnParameters": {
               "id": 90,
@@ -3469,7 +3504,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 94,
-                  "src": "950:7:0",
+                  "src": "946:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3480,7 +3515,7 @@
                     "id": 88,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "950:7:0",
+                    "src": "946:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3490,19 +3525,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "949:9:0"
+              "src": "945:9:0"
             },
-            "scope": 170,
-            "src": "913:75:0",
+            "scope": 172,
+            "src": "909:75:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 122,
+              "id": 124,
               "nodeType": "Block",
-              "src": "1068:176:0",
+              "src": "1064:193:0",
               "statements": [
                 {
                   "assignments": [
@@ -3514,8 +3549,8 @@
                       "id": 102,
                       "name": "weiAmount",
                       "nodeType": "VariableDeclaration",
-                      "scope": 122,
-                      "src": "1078:17:0",
+                      "scope": 124,
+                      "src": "1074:17:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3526,7 +3561,7 @@
                         "id": 101,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1078:7:0",
+                        "src": "1074:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3545,8 +3580,8 @@
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1463,
-                      "src": "1098:3:0",
+                      "referencedDeclaration": 1471,
+                      "src": "1094:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -3560,14 +3595,14 @@
                     "memberName": "value",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "1098:9:0",
+                    "src": "1094:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1078:29:0"
+                  "src": "1074:29:0"
                 },
                 {
                   "assignments": [
@@ -3579,8 +3614,8 @@
                       "id": 107,
                       "name": "tokens",
                       "nodeType": "VariableDeclaration",
-                      "scope": 122,
-                      "src": "1117:14:0",
+                      "scope": 124,
+                      "src": "1113:14:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -3591,7 +3626,7 @@
                         "id": 106,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
-                        "src": "1117:7:0",
+                        "src": "1113:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3612,7 +3647,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 102,
-                        "src": "1150:9:0",
+                        "src": "1146:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3630,8 +3665,8 @@
                       "name": "_getTokenAmount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 158,
-                      "src": "1134:15:0",
+                      "referencedDeclaration": 160,
+                      "src": "1130:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) view returns (uint256)"
@@ -3645,14 +3680,14 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1134:26:0",
+                    "src": "1130:26:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "1117:43:0"
+                  "src": "1113:43:0"
                 },
                 {
                   "expression": {
@@ -3660,12 +3695,43 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 115,
+                        "id": 116,
+                        "name": "benifiary",
+                        "nodeType": "MemberAccess",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": null,
+                        "src": "1186:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 115,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1471,
+                          "src": "1186:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 117,
                         "name": "benifiary",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 96,
-                        "src": "1186:9:0",
+                        "src": "1198:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -3673,12 +3739,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 116,
+                        "id": 118,
                         "name": "tokens",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 107,
-                        "src": "1196:6:0",
+                        "src": "1209:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -3687,6 +3753,10 @@
                     ],
                     "expression": {
                       "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
                         {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -3703,10 +3773,10 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "1170:6:0",
+                        "src": "1166:6:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC20_$503",
-                          "typeString": "contract IERC20"
+                          "typeIdentifier": "t_contract$_ERC20_$442",
+                          "typeString": "contract ERC20"
                         }
                       },
                       "id": 114,
@@ -3714,16 +3784,16 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberName": "transfer",
+                      "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 457,
-                      "src": "1170:15:0",
+                      "referencedDeclaration": 361,
+                      "src": "1166:19:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
-                        "typeString": "function (address,uint256) external returns (bool)"
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 117,
+                    "id": 119,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3731,15 +3801,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1170:33:0",
+                    "src": "1166:50:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 118,
+                  "id": 120,
                   "nodeType": "ExpressionStatement",
-                  "src": "1170:33:0"
+                  "src": "1166:50:0"
                 },
                 {
                   "expression": {
@@ -3747,18 +3817,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 119,
+                      "id": 121,
                       "name": "_forwardFunds",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 169,
-                      "src": "1213:13:0",
+                      "referencedDeclaration": 171,
+                      "src": "1226:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 120,
+                    "id": 122,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3766,20 +3836,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1213:15:0",
+                    "src": "1226:15:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 121,
+                  "id": 123,
                   "nodeType": "ExpressionStatement",
-                  "src": "1213:15:0"
+                  "src": "1226:15:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 123,
+            "id": 125,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -3792,15 +3862,15 @@
                   "name": "preValidate",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 145,
-                  "src": "1056:11:0",
+                  "referencedDeclaration": 147,
+                  "src": "1052:11:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "1056:11:0"
+                "src": "1052:11:0"
               }
             ],
             "name": "buyTokens",
@@ -3814,8 +3884,8 @@
                   "id": 96,
                   "name": "benifiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 123,
-                  "src": "1022:17:0",
+                  "scope": 125,
+                  "src": "1018:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3826,7 +3896,7 @@
                     "id": 95,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1022:7:0",
+                    "src": "1018:7:0",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -3837,25 +3907,25 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1021:19:0"
+              "src": "1017:19:0"
             },
             "returnParameters": {
               "id": 100,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1068:0:0"
+              "src": "1064:0:0"
             },
-            "scope": 170,
-            "src": "1003:241:0",
+            "scope": 172,
+            "src": "999:258:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 144,
+              "id": 146,
               "nodeType": "Block",
-              "src": "1277:141:0",
+              "src": "1290:141:0",
               "statements": [
                 {
                   "expression": {
@@ -3867,7 +3937,7 @@
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         },
-                        "id": 131,
+                        "id": 133,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3876,18 +3946,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 126,
+                            "id": 128,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1463,
-                            "src": "1295:3:0",
+                            "referencedDeclaration": 1471,
+                            "src": "1308:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 127,
+                          "id": 129,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3895,7 +3965,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1295:10:0",
+                          "src": "1308:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -3909,14 +3979,14 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 129,
+                              "id": 131,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "1317:1:0",
+                              "src": "1330:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -3932,20 +4002,20 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 128,
+                            "id": 130,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "1309:7:0",
+                            "src": "1322:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": "address"
                           },
-                          "id": 130,
+                          "id": 132,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3953,13 +4023,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "1309:10:0",
+                          "src": "1322:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
                           }
                         },
-                        "src": "1295:24:0",
+                        "src": "1308:24:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3968,14 +4038,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "62656e6966696172792069732061646472657373207a65726f",
-                        "id": 132,
+                        "id": 134,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1321:27:0",
+                        "src": "1334:27:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_281c05a7b6564dea878c115d1c0325f5f5c5dc98f132ae3906fcc87873dd5152",
@@ -3995,21 +4065,21 @@
                           "typeString": "literal_string \"benifiary is address zero\""
                         }
                       ],
-                      "id": 125,
+                      "id": 127,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "1287:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "1300:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 133,
+                    "id": 135,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4017,15 +4087,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1287:62:0",
+                    "src": "1300:62:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 134,
+                  "id": 136,
                   "nodeType": "ExpressionStatement",
-                  "src": "1287:62:0"
+                  "src": "1300:62:0"
                 },
                 {
                   "expression": {
@@ -4037,7 +4107,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 139,
+                        "id": 141,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4046,18 +4116,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 136,
+                            "id": 138,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1463,
-                            "src": "1367:3:0",
+                            "referencedDeclaration": 1471,
+                            "src": "1380:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 137,
+                          "id": 139,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4065,7 +4135,7 @@
                           "memberName": "value",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1367:9:0",
+                          "src": "1380:9:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -4076,14 +4146,14 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 138,
+                          "id": 140,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "kind": "number",
                           "lValueRequested": false,
                           "nodeType": "Literal",
-                          "src": "1380:1:0",
+                          "src": "1393:1:0",
                           "subdenomination": null,
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_0_by_1",
@@ -4091,7 +4161,7 @@
                           },
                           "value": "0"
                         },
-                        "src": "1367:14:0",
+                        "src": "1380:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -4100,14 +4170,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "207a65726f207765692073656e64",
-                        "id": 140,
+                        "id": 142,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "1383:16:0",
+                        "src": "1396:16:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_fbb384be4a727f3818a192359eaef10f9f7b562ec40d551de54026298743d192",
@@ -4127,21 +4197,21 @@
                           "typeString": "literal_string \" zero wei send\""
                         }
                       ],
-                      "id": 135,
+                      "id": 137,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1466,
-                        1467
+                        1474,
+                        1475
                       ],
-                      "referencedDeclaration": 1467,
-                      "src": "1359:7:0",
+                      "referencedDeclaration": 1475,
+                      "src": "1372:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 141,
+                    "id": 143,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4149,41 +4219,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1359:41:0",
+                    "src": "1372:41:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 142,
+                  "id": 144,
                   "nodeType": "ExpressionStatement",
-                  "src": "1359:41:0"
+                  "src": "1372:41:0"
                 },
                 {
-                  "id": 143,
+                  "id": 145,
                   "nodeType": "PlaceholderStatement",
-                  "src": "1410:1:0"
+                  "src": "1423:1:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 145,
+            "id": 147,
             "name": "preValidate",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 124,
+              "id": 126,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1274:2:0"
+              "src": "1287:2:0"
             },
-            "src": "1254:164:0",
+            "src": "1267:164:0",
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 157,
+              "id": 159,
               "nodeType": "Block",
-              "src": "1504:44:0",
+              "src": "1517:44:0",
               "statements": [
                 {
                   "expression": {
@@ -4191,12 +4261,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 154,
+                        "id": 156,
                         "name": "_rate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 12,
-                        "src": "1535:5:0",
+                        "src": "1548:5:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4212,32 +4282,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 152,
+                        "id": 154,
                         "name": "weiAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 147,
-                        "src": "1521:9:0",
+                        "referencedDeclaration": 149,
+                        "src": "1534:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "id": 153,
+                      "id": 155,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "mul",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1055,
-                      "src": "1521:13:0",
+                      "referencedDeclaration": 1063,
+                      "src": "1534:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
                         "typeString": "function (uint256,uint256) pure returns (uint256)"
                       }
                     },
-                    "id": 155,
+                    "id": 157,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4245,37 +4315,37 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1521:20:0",
+                    "src": "1534:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 151,
-                  "id": 156,
+                  "functionReturnParameters": 153,
+                  "id": 158,
                   "nodeType": "Return",
-                  "src": "1514:27:0"
+                  "src": "1527:27:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 158,
+            "id": 160,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_getTokenAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 148,
+              "id": 150,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 147,
+                  "id": 149,
                   "name": "weiAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 158,
-                  "src": "1453:17:0",
+                  "scope": 160,
+                  "src": "1466:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4283,10 +4353,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 146,
+                    "id": 148,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1453:7:0",
+                    "src": "1466:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4296,19 +4366,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1452:19:0"
+              "src": "1465:19:0"
             },
             "returnParameters": {
-              "id": 151,
+              "id": 153,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 150,
+                  "id": 152,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 158,
-                  "src": "1495:7:0",
+                  "scope": 160,
+                  "src": "1508:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -4316,10 +4386,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 149,
+                    "id": 151,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1495:7:0",
+                    "src": "1508:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -4329,19 +4399,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1494:9:0"
+              "src": "1507:9:0"
             },
-            "scope": 170,
-            "src": "1428:120:0",
+            "scope": 172,
+            "src": "1441:120:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 168,
+              "id": 170,
               "nodeType": "Block",
-              "src": "1597:44:0",
+              "src": "1610:44:0",
               "statements": [
                 {
                   "expression": {
@@ -4351,18 +4421,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 164,
+                          "id": 166,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1463,
-                          "src": "1624:3:0",
+                          "referencedDeclaration": 1471,
+                          "src": "1637:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 165,
+                        "id": 167,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4370,7 +4440,7 @@
                         "memberName": "value",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1624:9:0",
+                        "src": "1637:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -4386,18 +4456,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 161,
+                        "id": 163,
                         "name": "_wallet",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 10,
-                        "src": "1607:7:0",
+                        "src": "1620:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 163,
+                      "id": 165,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4405,13 +4475,13 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1607:16:0",
+                      "src": "1620:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 166,
+                    "id": 168,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4419,49 +4489,49 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1607:27:0",
+                    "src": "1620:27:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 167,
+                  "id": 169,
                   "nodeType": "ExpressionStatement",
-                  "src": "1607:27:0"
+                  "src": "1620:27:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 169,
+            "id": 171,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_forwardFunds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 159,
+              "id": 161,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1585:2:0"
+              "src": "1598:2:0"
             },
             "returnParameters": {
-              "id": 160,
+              "id": 162,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1597:0:0"
+              "src": "1610:0:0"
             },
-            "scope": 170,
-            "src": "1563:78:0",
+            "scope": 172,
+            "src": "1576:78:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 171,
-        "src": "75:1573:0"
+        "scope": 173,
+        "src": "74:1587:0"
       }
     ],
-    "src": "0:1649:0"
+    "src": "0:1662:0"
   },
   "compiler": {
     "name": "solc",
@@ -4491,10 +4561,28 @@
       "links": {},
       "address": "0xd8AD5047D572696b7C030114Ee280877B8d66A02",
       "transactionHash": "0x24975142fea4599c02237968342eecae3f7fcee850f179fdcc8c2a3e5802670a"
+    },
+    "1557727512180": {
+      "events": {},
+      "links": {},
+      "address": "0x8170d2fCC0E9F1028C218Df3576A142024839773",
+      "transactionHash": "0x86b81b2f561e0c4801d8b8123009e82e97ce152896afc7ea777edcf928e45452"
+    },
+    "1557736528522": {
+      "events": {},
+      "links": {},
+      "address": "0xbc149B56d235195D2ff32E55996519FE55B20f71",
+      "transactionHash": "0x7605f3e097012a5802dc0cd906a0f361c6ff248b72ef4e2e7f2bad7c37dd25b5"
+    },
+    "1557738891411": {
+      "events": {},
+      "links": {},
+      "address": "0x6F4195a4d2040F58898852d3dCdAA21267801C38",
+      "transactionHash": "0x4b6523a5170fa3706ffa40f5cdb321ba14677a7aea100655a6ede5bffa6927cc"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-10T09:06:04.696Z",
+  "updatedAt": "2019-05-13T14:46:35.213Z",
   "devdoc": {
     "methods": {}
   },

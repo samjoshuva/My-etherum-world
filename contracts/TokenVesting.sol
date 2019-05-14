@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-import "browser/ERC20.sol";
+import "./ERC20.sol";
 
 
 contract TokenVesting is ERC20 {
